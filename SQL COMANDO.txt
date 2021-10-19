@@ -1,0 +1,20 @@
+create database hospital;
+use hospital;
+
+create table medico(
+crm VARCHAR(13),
+nome VARCHAR(100),
+data_nascimento DATE,
+data_contrato DATE,
+carga_horaria_semanal SMALLINT,
+PRIMARY KEY (crm)
+);
+
+
+create table paciente(
+cpf CHAR(14),
+nome VARCHAR(100),
+data_nascimento DATE,
+data_registro DATE,
+PRIMARY KEY (cpf)
+);
